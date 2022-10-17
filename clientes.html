@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="navegacao">
+            <div>
+                <h1 id="gestao">Gestão Online</h1>
+            </div>
+
+            <ul>
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icone"><img src="img/inicio.svg" alt="" width="20px"></span>
+                        <span class="menu">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="clientes.html">
+                        <span class="icone"><img src="img/clientes.svg" alt="" width="20px"></span>
+                        <span class="menu">Clientes</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="estoque.html">
+                        <span class="icone"><img src="img/estoque.svg" alt="" width="20px"></span>
+                        <span class="menu">Estoque</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="OS.html">
+                        <span class="icone"><img src="img/os.png" alt="" width="20px"></span>
+                        <span class="menu">OS</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="vendas.html">
+                        <span class="icone"><img src="img/vendas.svg" alt="" width="20px"></span>
+                        <span class="menu">Vendas</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/financas.svg" alt="" width="20px"></span>
+                        <span class="menu">Finanças</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/fornecedores.svg" alt="" width="20px"></span>
+                        <span class="menu">Fornecedores</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/sair.svg" alt="" width="20px"></span>
+                        <span class="menu">Sair</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="menu-topo">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="clientes.html">Clientes</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="clientes-cadastro.html">Cadastrar Novo Cliente</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <form class="d-flex" role="search">
+                <input id="input-buscar-clientes" class="form-control me-2" type="search" placeholder="Digite o nome do cliente"
+                    aria-label="Search">
+                <button id="botao-buscar-clientes" class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+
+        <div id="tabela-clientes">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="id-cliente">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Contato</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="row">Editar</th>
+                        <th scope="row">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="id-cliente">1</th>
+                        <td>Bruno Wellington Lima Carvalho</td>
+                        <td>000.000.000-00</td>
+                        <td>(83) 98669-7398</td>
+                        <td>brunowellington9@gmail.com</td>
+                        <td>Rua dois de novembro</td>
+                        <td>
+                            <div class="imagem-icone">
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/editar.png" alt="Editar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagem-icone">
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/lixeira.png" alt="Apagar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="id-cliente">2</th>
+                        <td>Rikelmen Viegas de Lima</td>
+                        <td>000.000.000-00</td>
+                        <td>(83) 99135-9893</td>
+                        <td>rikelmenviegas12@gmail.com</td>
+                        <td>Rua por do sol</td>
+                        <td>
+                            <div>
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/editar.png" alt="Editar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagem-icone">
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/lixeira.png" alt="Apagar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="id-cliente">3</th>
+                        <td>Lucas Dutra</td>
+                        <td>000.000.000-00</td>
+                        <td>(00) 00000-0000</td>
+                        <td>rikelmenviegas12@gmail.com</td>
+                        <td>Rua aueshaduashdausdhasduh</td>
+                        <td>
+                            <div class="imagem-icone">
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/editar.png" alt="Editar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="imagem-icone">
+                                <a href="">
+                                    <span class="imagem-icone"><img src="img/img-clientes/lixeira.png" alt="Apagar"
+                                            width="30px"></span>
+                                </a>
+                            </div>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        const list = document.querySelectorAll('.list');
+        function activelink() {
+            list.forEach((item) =>
+                item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activelink));
+    </script>
+</body>
+
+</html>

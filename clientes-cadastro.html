@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+        <div class="navegacao">
+            <div>
+                <h1 id="gestao">Gestão Online</h1>
+            </div>
+
+            <ul>
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icone"><img src="img/inicio.svg" alt="" width="20px"></span>
+                        <span class="menu">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="clientes.html">
+                        <span class="icone"><img src="img/clientes.svg" alt="" width="20px"></span>
+                        <span class="menu">Clientes</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/estoque.svg" alt="" width="20px"></span>
+                        <span class="menu">Estoque</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="OS.html">
+                        <span class="icone"><img src="img/os.png" alt="" width="20px"></span>
+                        <span class="menu">OS</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="vendas.html">
+                        <span class="icone"><img src="img/vendas.svg" alt="" width="20px"></span>
+                        <span class="menu">Vendas</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/financas.svg" alt="" width="20px"></span>
+                        <span class="menu">Finanças</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/fornecedores.svg" alt="" width="20px"></span>
+                        <span class="menu">Fornecedores</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="#">
+                        <span class="icone"><img src="img/sair.svg" alt="" width="20px"></span>
+                        <span class="menu">Sair</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="menu-topo">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="clientes.html">Clientes</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="clientes-cadastro.html">Cadastrar Novo Cliente</a>
+                </li>
+            </ul>
+        </div>
+
+        <form id="form-clientes" class="row g-3 needs-validation" novalidate>
+            <h1>Cadastrar Cliente</h1>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">NOME</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="000.000.000-00" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">CONTATO</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="() 00000-0000" required>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">EMAIL</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">ENDEREÇO</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+            </div>
+
+            <div class="col-12">
+                <a href="">
+                    <button id="botao-cadastrar-cliente" class="btn btn-success" type="submit">Cadastrar</button>
+                </a>
+            </div>
+        </form>
+    </main>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+
+        const list = document.querySelectorAll('.list');
+        function activelink() {
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');  
+        }
+            list.forEach((item) =>
+            item.addEventListener('click', activelink));
+    </script>
+</body>
+
+</html>
